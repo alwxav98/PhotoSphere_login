@@ -1,0 +1,12 @@
+CREATE DATABASE PhotoSphere;
+GO
+USE PhotoSphere;
+GO
+CREATE TABLE Users (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Email NVARCHAR(255) NOT NULL UNIQUE,
+    PasswordHash NVARCHAR(255) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+select * from Users

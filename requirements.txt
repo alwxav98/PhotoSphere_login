@@ -1,0 +1,6 @@
+Flask
+flask_sqlalchemy
+flask_restful
+Werkzeug
+pyodbc
+python-dotenv
